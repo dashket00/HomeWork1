@@ -17,7 +17,7 @@ public class Main {
         System.out.println("число четное");}
                 else   System.out.println("число нечетное"); */
 
-
+        :)
 
 
         /*   Для введенного числа t (температура на улице) вывести: Если t>–5, то вывести «Warm».

@@ -59,6 +59,46 @@ public class Main {
         }
         System.out.println("Минимальный элемент : " + min + " Инд мин " + index_min);
 
+        // Задача 4
+        int zero = 0;
+        for (int i = 0; i < Massiv.length; i++) {
+            if (Massiv[i] == 0) {
+                zero++;
+            }
+        }
+        if (zero == 0) {
+            System.out.println("Нулевых элементов нет");
+        } else {
+            System.out.println("Нулевых элементов: " + zero);
+        }
+
+        //Задача 5
+        for (int i = 0; i < (Massiv.length - 1) / 2; i++) {
+            int buf;
+            buf = Massiv[Massiv.length - i - 1];
+            Massiv[Massiv.length - i - 1] = Massiv[i];
+            Massiv[i] = buf;
+        }
+
+        for (int i = 0; i < Massiv.length; i++) {
+            System.out.print(Massiv[i] + " ");
+        }
+        System.out.println("");
+
+        //Задача 6
+        Boolean uslovie = true;
+        for (int i = 0; i < Massiv.length - 1; i++) {
+            if (Massiv[i] < Massiv[i + 1]) {
+            } else {
+                uslovie = false;
+            }
+        }
+
+        if (uslovie) {
+            System.out.println("Возрастающая последовательность!");
+        } else {
+            System.out.println("Невозрастающая последовательность!");
+        }
 
     }
 

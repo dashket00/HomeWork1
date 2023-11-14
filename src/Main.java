@@ -1,4 +1,4 @@
-package src;
+
 
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
@@ -86,11 +86,11 @@ public class Main {
         System.out.println("");
 
         //Задача 6
-        Boolean uslovie = true;
+        boolean uslovie = true;
         for (int i = 0; i < Massiv.length - 1; i++) {
-            if (Massiv[i] < Massiv[i + 1]) {
-            } else {
+            if (Massiv[i] >= Massiv[i + 1]) {
                 uslovie = false;
+                break;
             }
         }
 
